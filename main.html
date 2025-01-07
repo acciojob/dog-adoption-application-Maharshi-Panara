@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dog Adoption Application Form</title>
 </head>
-
 <body>
-	<form action="/submit-application" method="post">
-
+    <form action="/submit-application" method="POST">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" required>
@@ -26,7 +25,7 @@
 
         <div class="form-group">
             <label for="dog-experience">
-                <input type="checkbox" id="dog-experience" name="dog_experience"> 
+                <input type="checkbox" id="dog-experience" name="dog_experience" value="yes"> 
                 Have you ever lived with a Dog before?
             </label>
         </div>
@@ -43,12 +42,12 @@
             </select>
         </div>
 
-        <input type="submit" value="Submit">
+        <!-- Add ID to the submit button -->
+        <input type="submit" id="submit" value="Submit">
     </form>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
-
 </html>
